@@ -49,6 +49,14 @@
   
 
 
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+        /* 鼠标点击特效 - 7Core.CN */
+        var a_idx = 0;jQuery(document).ready(function($) {$("body").click(function(e) {var a = new Array("ㅤ富强民主", "ㅤ文明和谐", "ㅤ自由平等", "ㅤ公正法治", "ㅤ爱国敬业", "ㅤ诚信友善");var $i = $("<span/>").text(a[a_idx]);
+        a_idx = (a_idx + 1) % a.length;var x = e.pageX,y = e.pageY;$i.css({"z-index": 100000000,"top": y - 20,"left": x,"position": "absolute","font-weight": "normal","color": "#000000"});$("body").append($i);$i.animate({"top": y - 110,"opacity": 0},1500,function() {$i.remove();});});});
+</script>
+
+
   
 
 </head>
@@ -284,19 +292,19 @@
           <span class="tooltip-content">
             <span class="tooltip-text">
               <span class="tooltip-inner">
-                <p class="reward-p"><i class="icon icon-quo-left"></i>😁🌹<i
+                <p class="reward-p"><i class="icon icon-quo-left"></i>🌹<i
                     class="icon icon-quo-right"></i></p>
                 <div class="reward-box">
                   
                   <div class="reward-box-item">
                     <img class="reward-img" src="/img/alipay.jpg">
-	    <span><span style="font-family:Microsoft YaHei;">支付宝</span></span>
+	    <span><span style="font-family:Microsoft YaHei;"><br>支付宝</span></span>
                   </div>
                   
                   
                   <div class="reward-box-item">
                     <img class="reward-img" src="/img/weixin.png">
-	    <span><span style="font-family:Microsoft YaHei;">微信</span></span>
+	    <span><span style="font-family:Microsoft YaHei;"><br>微信</span></span>
                   </div>
                   
                 </div>
