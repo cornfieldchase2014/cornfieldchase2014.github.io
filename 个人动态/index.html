@@ -17,7 +17,7 @@
 <meta property="og:site_name" content="源野追逐的博客">
 <meta property="og:description" content="💬：欢迎互动">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-10-22T14:00:36.601Z">
+<meta property="og:updated_time" content="2019-10-22T15:03:23.215Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="个人动态">
 <meta name="twitter:description" content="💬：欢迎互动">
@@ -253,7 +253,7 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <p align="center">💬：欢迎互动</p><a id="more"></a><br><br>
+    <p align="center">💬：欢迎互动</p>
     
 
     
@@ -469,7 +469,7 @@ document.body.addEventListener('click', function(e) {
         const nick = document.querySelector('input[name=nick]');
         const reg = /^[A-Za-z0-9\u4e00-\u9fa5]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/;
         if (!email.value || !nick.value || !reg.test(email.value)) {
-            const str = `<div class="valert txt-center"><div class="vtext">请填写正确的昵称和邮箱！</div></div>`;
+            const str = `<div class="valert txt-center"><br><br><div class="vtext">请填写正确的昵称和邮箱！</div></div>`;
             const vmark = document.querySelector('.vmark');
             vmark.innerHTML = str;
             vmark.style.display = 'block';
