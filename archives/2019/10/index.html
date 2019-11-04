@@ -47,7 +47,7 @@
 <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript">
         /* 鼠标点击特效 - 7Core.CN */
-        var a_idx = 0;jQuery(document).ready(function($) {$("body").click(function(e) {var a = new Array("ㅤ富强民主", "ㅤ文明和谐", "ㅤ自由平等", "ㅤ公正法治", "ㅤ爱国敬业", "ㅤ诚信友善");var $i = $("<span/>").text(a[a_idx]);
+        var a_idx = 0;jQuery(document).ready(function($) {$("body").click(function(e) {var a = new Array("ㅤ妈妈我想吃烤山药","ㅤ吃，吃大块的，两块够吗","ㅤ够了，谢谢妈妈，妈妈真好");var $i = $("<span/>").text(a[a_idx]);
         a_idx = (a_idx + 1) % a.length;var x = e.pageX,y = e.pageY;$i.css({"z-index": 100000000,"top": y - 20,"left": x,"position": "absolute","font-weight": "normal","color": "#000000"});$("body").append($i);$i.animate({"top": y - 110,"opacity": 0},1500,function() {$i.remove();});});});
 </script>
 
