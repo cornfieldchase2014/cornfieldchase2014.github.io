@@ -582,10 +582,10 @@ document.body.addEventListener('click', function(e) {
   var titleTime;
   document.addEventListener("visibilitychange", function () {
     if (document.hidden) {
-      document.title = "(つェ⊂) 网页崩溃了~ | " + originTitle;
+      document.title = "(﹁ _﹁) 网页崩溃了~ | " + originTitle;
       clearTimeout(titleTime);
     } else {
-      document.title = "(*´∇｀*) 开个玩笑嘛~ | " + originTitle;
+      document.title = "(つェ⊂) 开玩笑的啦~ | " + originTitle;
       titleTime = setTimeout(function () {
         document.title = originTitle;
       }, 2000);
