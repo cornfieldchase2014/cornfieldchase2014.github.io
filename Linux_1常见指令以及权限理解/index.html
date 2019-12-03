@@ -10,18 +10,17 @@
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="命令学习：命令构成：命令名称 [操作选项] [操作对象]linux下一切内容皆文件&amp;emsp;&amp;emsp;文件夹为目录类型文件，即文件夹也为文件linux不以文件后缀区分文件类型登录成功后，默认处于当前用户的home目录（cd /home/cornfieldchase = cd ~）&amp;emsp;&amp;emsp;cd /：是跳转到根目录&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;根目录是所有用户共享">
-<meta name="keywords" content="Linux">
+  <meta name="keywords" content="Linux">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Linux_1常见指令以及权限理解">
 <meta property="og:url" content="https://www.cornfieldchase2014.com/Linux_1常见指令以及权限理解/index.html">
 <meta property="og:site_name" content="源野追逐的博客">
-<meta property="og:description" content="命令学习：命令构成：命令名称 [操作选项] [操作对象]linux下一切内容皆文件&amp;emsp;&amp;emsp;文件夹为目录类型文件，即文件夹也为文件linux不以文件后缀区分文件类型登录成功后，默认处于当前用户的home目录（cd /home/cornfieldchase = cd ~）&amp;emsp;&amp;emsp;cd /：是跳转到根目录&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;根目录是所有用户共享">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-11-09T09:27:15.261Z">
+<meta property="og:image" content="https://upload.cc/i1/2019/12/03/R0SV8m.png">
+<meta property="og:updated_time" content="2019-12-03T12:56:59.474Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux_1常见指令以及权限理解">
-<meta name="twitter:description" content="命令学习：命令构成：命令名称 [操作选项] [操作对象]linux下一切内容皆文件&amp;emsp;&amp;emsp;文件夹为目录类型文件，即文件夹也为文件linux不以文件后缀区分文件类型登录成功后，默认处于当前用户的home目录（cd /home/cornfieldchase = cd ~）&amp;emsp;&amp;emsp;cd /：是跳转到根目录&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;根目录是所有用户共享">
+<meta name="twitter:image" content="https://upload.cc/i1/2019/12/03/R0SV8m.png">
   
     <link rel="alternative" href="/atom.xml" title="源野追逐的博客" type="application/atom+xml">
   
@@ -273,9 +272,10 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <p>命令学习：<br>命令构成：命令名称 [操作选项] [操作对象]<br>linux下一切内容皆文件<br>&emsp;&emsp;文件夹为目录类型文件，即文件夹也为文件<br>linux不以文件后缀区分文件类型<br>登录成功后，默认处于当前用户的home目录（cd /home/cornfieldchase = cd ~）<br>&emsp;&emsp;cd /：是跳转到根目录<br>&emsp;&emsp;&emsp;&emsp;根目录是所有用户共享的目录<br>&emsp;&emsp;cd ~：是跳转到当前用户的家目录<br>&emsp;&emsp;&emsp;&emsp;如果是root用户，cd ~相当于cd /root<br>&emsp;&emsp;&emsp;&emsp;如果是普通用户，cd ~相当于cd/home/当前用户名<br>&emsp;&emsp;cd /home：相当于查看有多少普通用户的家目录<br>&emsp;&emsp;&emsp;&emsp;所有普通用户的父目录都是home目录<br>&emsp;&emsp;cd ..：返回上级目录<br>&emsp;&emsp;cd -：返回最近访问的目录</p>
+    <div align="center"><img src="https://upload.cc/i1/2019/12/03/R0SV8m.png" width="996"></div>
 <a id="more"></a>
-<p>目录挂载在filesystem上（结构唯一）<br>绝对路径：唯一的路径(从根目录开始表达）<br>&emsp;&emsp;cd /home/当前用户名/xx<br>相对路径：相对于一个指定位置，当前所在的路径开始表达<br>&emsp;&emsp;cd ../xx</p>
+
+<p>命令学习：<br>命令构成：命令名称 [操作选项] [操作对象]<br>linux下一切内容皆文件<br>&emsp;&emsp;文件夹为目录类型文件，即文件夹也为文件<br>linux不以文件后缀区分文件类型<br>登录成功后，默认处于当前用户的home目录（cd /home/cornfieldchase = cd ~）<br>&emsp;&emsp;cd /：是跳转到根目录<br>&emsp;&emsp;&emsp;&emsp;根目录是所有用户共享的目录<br>&emsp;&emsp;cd ~：是跳转到当前用户的家目录<br>&emsp;&emsp;&emsp;&emsp;如果是root用户，cd ~相当于cd /root<br>&emsp;&emsp;&emsp;&emsp;如果是普通用户，cd ~相当于cd/home/当前用户名<br>&emsp;&emsp;cd /home：相当于查看有多少普通用户的家目录<br>&emsp;&emsp;&emsp;&emsp;所有普通用户的父目录都是home目录<br>&emsp;&emsp;cd ..：返回上级目录<br>&emsp;&emsp;cd -：返回最近访问的目录<br>目录挂载在filesystem上（结构唯一）<br>绝对路径：唯一的路径(从根目录开始表达）<br>&emsp;&emsp;cd /home/当前用户名/xx<br>相对路径：相对于一个指定位置，当前所在的路径开始表达<br>&emsp;&emsp;cd ../xx</p>
 <p>快捷键：<br>&emsp;&emsp;命令补全：tab<br>&emsp;&emsp;中断操作：ctrl+c<br>&emsp;&emsp;输入结束：ctrl+d</p>
 <p>目录命令：<br>ls：浏览当前所在目录的内容<br>&emsp;&emsp;//man ls<br>&emsp;&emsp;语法：ls [选项] [目录或文件]<br>&emsp;&emsp;功能：对于目录，该命令列出该目录下的所有子目录与文件。对于文件，将列出文件名以及其他信息。<br>&emsp;&emsp;常用选项：<br>&emsp;&emsp;&emsp;&emsp;-a：列出目录下的所有文件，包括以 . 开头的隐含文件。（linux下以 . 开头的文件是隐藏文件）<br>&emsp;&emsp;&emsp;&emsp;-l：列出文件的详细信息（长信息）<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;-lh：人性化显示（可以在列出文件的同时查看文件的大小）<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;-al：组合选项<br>&emsp;&emsp;&emsp;&emsp;-r：对目录反向排序。<br>&emsp;&emsp;&emsp;&emsp;-t：以时间排序。<br>&emsp;&emsp;&emsp;&emsp;-s：在l文件名后输出该文件的大小。（大小排序，如何找到目录下最大的文件）<br>&emsp;&emsp;&emsp;&emsp;-R：列出所有子目录下的文件。(递归)<br>&emsp;&emsp;&emsp;&emsp;-d：将目录象文件一样显示，而不是显示其下的文件。 如：ls –d 指定目录<br>&emsp;&emsp;拓展选项：<br>&emsp;&emsp;-i 输出文件的 i 节点的索引信息。 如 ls –ai 指定文件<br>&emsp;&emsp;-k 以 k 字节的形式表示文件的大小。ls –alk 指定文件<br>&emsp;&emsp;-n 用数字的 UID,GID 代替名称。 （介绍 UID， GID）<br>&emsp;&emsp;-F 在每个文件名后附上一个字符以说明该文件的类型，“*”表示可执行的普通文件；“/”表示目录；“@”表示符号链接；“|”表示FIFOs；“=”表示套接字(sockets)。（目录类型识别）</p>
 <p>bc：计算器<br>top：性能分析<br>clear：清屏<br>set nu：显示行号<br>set nonu：不显示行号<br>pwd：显示当前所在路径<br>histroy：查看历史输入命令</p>
